@@ -1,0 +1,412 @@
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-Light.woff");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-Regular.woff");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-SemiBold.woff");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-Bold.woff");
+    font-weight: 700;
+}
+
+/*==================================================
+  Typography
+  ==================================================*/
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    line-height: 1.5;
+    text-transform: none;
+}
+
+h2 {
+    margin-bottom: 8px;
+    font-family: inherit;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #fff;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+/* ==================================================
+// Global styles
+================================================== */
+/* html,body,page content */
+html {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+body {
+    color: #fff;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    background-color: #202020;
+    display: block;
+}
+
+.container-fluid {
+    padding: 0 100px;
+}
+
+/* spaces */
+/* Font Awesome Icons */
+
+/* a */
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+a {
+    color: #fff;
+    -webkit-transition: all ease .4s;
+    -o-transition: all ease .4s;
+    transition: all ease .4s;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #ff0000;
+}
+
+a:focus {
+    outline: 0;
+}
+
+/* img */
+img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+/* unstyled */
+
+/* input form */
+
+/* hr */
+
+/* button */
+
+/* button Hover */
+
+/* ul, ol */
+ul {
+    margin-bottom: 20px;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+/* page banners */
+
+/* banner gradients */
+
+/* banner images background */
+
+/* Sub header */
+
+/* Breadcrumb */
+
+/*  Section Parallax  */
+
+/*  Pills  */
+
+/*  Owl Carousel  */
+
+/* ================================================
+ // Common styles
+ ================================================== */
+/*  Page intro  */
+
+/*  Block Title  */
+
+/* Video title */
+
+/* Video block style */
+
+/* Video block Effects */
+
+/* Video block info */
+
+/*  Episode block style  */
+
+/* Single Pages */
+
+/* Modal */
+
+/* Share Modal */
+
+/* Video Player */
+
+/*==================================================
+  Header
+  ==================================================*/
+/*  Mobile Header  */
+.mobile-header {
+    display: none;
+}
+
+.navbar-brand {
+    color: #fff;
+    margin-right: 30px;
+}
+
+.mobile-header-content {
+    padding: 25px 0;
+}
+
+.mobile-logo {
+    padding: 20px 0;
+}
+
+/* Right Icons */
+.right-menu-wrap .nav-link {
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+/* Header filter */
+.nav-filter {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+}
+
+.filter-animate {
+    -moz-animation: counter-clockwise 2s ease-in-out forwards infinite;
+    -webkit-animation: counter-clockwise 2s ease-in-out forwards infinite;
+    animation: counter-clockwise 2s ease-in-out forwards infinite;
+    display: inline-block;
+    margin-top: auto;
+    margin-bottom: auto;
+    fill: #fff;
+}
+
+.filter-animate:hover {
+    fill: #ff0000;
+}
+
+
+
+/* Header notification */
+.notification-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.notification-card .notification-thumb {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+.notification-card .notification-content .notification-title {
+    font-size: 14px;
+    line-height: 24px;
+    margin: 12px 0 10px;
+    color: #333333;
+}
+
+.notification-card .notification-content .date {
+    font-size: 12px;
+    color: #a3a3a3;
+    margin-right: 8px;
+    padding-right: 10px;
+    line-height: 12px;
+    display: inline-block;
+}
+
+/* Header account */
+.user-icon {
+    height: 40px;
+    width: 40px;
+    min-width: 40px;
+    line-height: 40px;
+    font-size: 10px;
+}
+
+/* Header Search */
+.right-menu-wrap {
+    position: absolute;
+    right: 0;
+    top: 15px;
+    padding: 0;
+}
+
+.main-nav > .container-fluid {
+    position: relative;
+}
+
+.nav-search {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+}
+
+.nav-search a {
+    color: #fff;
+    display: block;
+}
+
+.nav-search a:hover {
+    color: #ff0000;
+}
+
+
+/* Main navigation */
+.main-nav {
+    position: relative;
+    padding: 0 15px;
+    background-color: #272829;
+    min-height: 70px;
+}
+
+.site-nav-inner {
+    position: static;
+    width: 100%;
+}
+
+.navbar-toggler {
+    color: #fff;
+    padding: 8px 15px;
+    background: #ff0000;
+    position: absolute;
+    top: -55px;
+    z-index: 9;
+}
+
+.navbar-collapse {
+    padding-left: 0;
+}
+
+ul.navbar-nav > li {
+    float: left;
+    position: relative;
+}
+
+ul.navbar-nav > li > a {
+    padding: 0 15px;
+    line-height: 50px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    position: relative;
+    -webkit-transition: 350ms;
+    -o-transition: 350ms;
+    transition: 350ms;
+    padding: 10px 22px;
+}
+
+ul.navbar-nav > li > a:hover,
+ul.navbar-nav > li > a:focus {
+    background: none;
+}
+
+ul.navbar-nav > li:hover a::before {
+    border-color: #ff0000;
+    opacity: 1;
+    -webkit-transform: scale(1) translateZ(0);
+    transform: scale(1) translateZ(0);
+}
+
+.main-nav .nav-item {
+    padding-left: 10px;
+}
+
+/* Dropdown */
+.dropdown-menu {
+    text-align: left;
+    background: #fff;
+    z-index: 100;
+    min-width: 230px;
+    border-radius: 0;
+    border: 0;
+    -webkit-box-shadow: 0px 3px 3px 2px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 3px 3px 2px rgba(0, 0, 0, 0.15);
+    margin-top: 0;
+    padding: 0;
+}
+
+.navbar-nav > li > .dropdown-menu {
+    border-top: 1px solid #dedede;
+}
+
+.dropdown-menu li a {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+    padding: 15px 25px 15px 25px;
+    border-bottom: 1px solid #e5e5e5;
+    color: #333333;
+    background: #f4f4f4;
+    text-transform: uppercase;
+}
+
+.dropdown-menu li:last-child > a {
+    border-bottom: 0;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+    background: #ff0000;
+    color: #fff;
+}
+
+
+
+/*==================================================
+  Animation
+  ==================================================*/
+
+@keyframes counter-clockwise {
+    0% {
+        transform: translateX(0px) rotate(-50deg);
+    }
+
+    100% {
+        transform: translateX(0px) rotate(-360deg);
+    }
+}
+
+@-webkit-keyframes counter-clockwise {
+    0% {
+        -webkit-transform: translateX(0px) rotate(-50deg);
+    }
+
+    100% {
+        -webkit-transform: translateX(0px) rotate(-360deg);
+    }
+}

@@ -1,0 +1,226 @@
+
+
+ :root {
+
+    /**
+     * Colors 
+     */
+  
+    --live-indicator-shadow: hsla(0, 79%, 63%, 0.5);
+    --rich-black-fogra-30:   hsl(219, 32%, 10%);
+    --rich-black-fogra-29:   hsl(222, 25%, 10%);
+    --live-indicator:        hsl(0, 79%, 63%);
+    --oxford-blue-50:        hsla(218, 39%, 14%, 0.8);
+    --oxford-blue:           hsl(218, 39%, 14%);
+    --light-azure:           red;
+    --off-white:             hsl(0, 0%, 88%);
+    --yellow:                hsl(45, 100%, 54%);
+    --white:                 hsl(0, 0%, 100%);
+    --azure:                 red;
+  
+    /**
+     * Typography 
+     */
+  
+    --ff-inter: "Inter", sans-serif;
+  
+    --section-heading: 40px;
+    --fs-lg:           22px;
+    --fs-md:           17px;
+    --fs-sm:           14px;
+    --fs-x-sm:         12px;
+    
+    --fw-7: 700;
+    --fw-6: 600;
+    --fw-5: 500;
+  
+    
+  
+    --px: 120px; /* padding-left & padding-right */
+  
+  }
+
+
+
+@import url(./reset.css);
+
+
+
+.category {
+  padding: 0 var(--px);
+}
+
+.section-heading {
+  font-size: var(--section-heading);
+  font-weight: var(--fw-5);
+  margin-bottom: 60px;
+}
+
+
+
+.container {
+  max-width: 1440px;
+  margin: auto;
+}
+
+
+
+.movie-card:hover :is(.bookmark, .rating, .play) {
+  --scale: 1;
+}
+
+
+
+.category {
+  margin-bottom: 60px;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.category-card {
+  position: relative;
+  height: 150px;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.category-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 20%, #000a);
+}
+
+.category-card:hover .card-img {
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+.category-card .name,
+.category-card .total {
+  position: absolute;
+  bottom: 20px;
+  color: var(--white);
+  z-index: 20;
+}
+
+.category-card .name {
+  left: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  transition: .5s;
+  font-family: "Poppins";
+}
+
+.category-card .total {
+  right: 20px;
+  font-size: 18px;
+  background: var(--oxford-blue-50);
+  padding: 5px 8px;
+  border-radius: 8px;
+}
+
+.category-card:hover .name {
+  color: var(--light-azure);
+
+}
+
+
+
+
+/*-------------------------------------*\
+  #RESPONSIVE FOR 1200px
+\*-------------------------------------*/
+
+@media screen and (max-width: 1200px) {
+
+    :root {
+  
+      /**
+       * Spacing 
+       */
+  
+      --px: 80px; /* padding-left & padding-right */
+  
+    }
+  
+  
+  
+    .category-grid { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+  
+  
+    
+  }
+  
+  
+  
+  
+  
+  /*-------------------------------------*\
+    #RESPONSIVE FOR 1024px
+  \*-------------------------------------*/
+  
+  @media screen and (max-width: 1024px) {
+  
+    :root {
+  
+      /**
+       * Spacing 
+       */
+  
+      --px: 60px; /* padding-left & padding-right */
+  
+    }
+
+  
+  }
+  
+  
+  
+  
+  
+  /*-------------------------------------*\
+    #RESPONSIVE FOR 768px
+  \*-------------------------------------*/
+  
+  @media screen and (max-width: 768px) {
+  
+    :root {
+  
+  
+      --px: 40px; 
+  
+    }
+  
+  }
+  
+  
+  
+  
+  
+  /*-------------------------------------*\
+    #RESPONSIVE FOR 575px
+  \*-------------------------------------*/
+  
+  @media screen and (max-width: 575px) {
+    :root {
+  
+      /**
+       * Spacing 
+       */
+  
+      --px: 20px; /* padding-left & padding-right */
+  
+  
+      --section-heading: 32px;
+      --fs-lg:           20px;
+  
+    }
+  
+  
+  }

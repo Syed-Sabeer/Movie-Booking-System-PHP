@@ -1,0 +1,1019 @@
+/*-----------------------------------*\
+ * #style.css
+\*-----------------------------------*/
+
+/**
+ * copyright 2022 @codewithsadee
+ */
+
+
+
+
+
+/*-----------------------------------*\
+ * #CUSTOM PROPERTY
+\*-----------------------------------*/
+
+:root {
+
+	/**
+	 * colors
+	 */
+  
+	--rich-black-fogra-29: hsl(225, 25%, 9%);
+	--rich-black-fogra-39: hsl(170, 21%, 5%);
+	--raisin-black: hsl(228, 13%, 15%);
+	--eerie-black: hsl(207, 19%, 11%);
+	--light-gray: hsl(0, 3%, 80%);
+	--gunmetal-1: hsl(229, 15%, 21%);
+	--gunmetal-2: hsl(216, 22%, 18%);
+	--gainsboro: hsl(0, 7%, 88%);
+	--citrine: red;
+	--xiketic: hsl(253, 21%, 13%);
+	--gray-x: hsl(0, 0%, 74%);
+	--white: hsl(0, 100%, 100%);
+	--black: hsl(0, 0%, 0%);
+	--jet: hsl(0, 0%, 20%);
+  
+  
+  
+  
+  
+  
+	--rich-black-fogra-30:   hsl(219, 32%, 10%);
+	--off-white:             hsl(0, 0%, 88%);
+	--white:                 hsl(0, 0%, 100%);
+   
+  
+	--main-color: #c0392b;
+	--body-bg: #181616;
+	--box-bg: #221f1f;
+	--text-color: #ffffff;
+  
+	--nav-height: 60px;
+	--space-top: 30px;
+  
+  
+	--ff-inter: "Inter", sans-serif;
+  
+	--section-heading: 40px;
+	--fs-lg:           22px;
+	--fs-md:           17px;
+	--fs-sm:           14px;
+	--fs-x-sm:         12px;
+	
+	--fw-7: 700;
+	--fw-6: 600;
+	--fw-5: 500;
+  
+	--px: 120px; 
+  
+  
+	/**
+	 * typography
+	 */
+  
+	--ff-poppins: 'Poppins', sans-serif;
+  
+	--fs-1: 36px;
+	--fs-2: 32px;
+	--fs-3: 30px;
+	--fs-4: 24px;
+	--fs-5: 20px;
+	--fs-6: 18px;
+	--fs-7: 16px;
+	--fs-8: 15px;
+	--fs-9: 14px;
+	--fs-10: 13px;
+	--fs-11: 12px;
+	--fs-12: 11px;
+  
+	--fw-500: 500;
+	--fw-700: 700;
+  
+	/**
+	 * transition
+	 */
+  
+	--transition-1: 0.15s ease;
+	--transition-2: 0.25s ease-in;
+  
+	/**
+	 * spacing
+	 */
+  
+	--section-padding: 100px;
+  
+  }
+  
+  
+  
+  
+  
+  /*-----------------------------------*\
+   * #RESET
+  \*-----------------------------------*/
+  
+  *, *::before, *::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  
+  a { text-decoration: none; }
+  
+  
+  img,
+  span,
+  input,
+  button { display: block; }
+  
+  input {
+	font: inherit;
+	width: 100%;
+	border: none;
+  }
+  
+  button {
+	font: inherit;
+	background: none;
+	border: none;
+	cursor: pointer;
+  }
+  
+  html {
+	font-family: var(--ff-poppins);
+	scroll-behavior: smooth;
+  }
+  
+  body { background: var(--eerie-black); }
+  
+  
+  
+  
+  
+  /*-----------------------------------*\
+   * #REUSED STYLE
+  \*-----------------------------------*/
+  
+  .container { padding-inline: 15px; }
+  
+  /**
+   * TITLES & SUBTITLES
+   */
+  
+  /**
+   * BADGE
+   */
+  
+  /**
+   * MOVIE META
+   */
+  
+  .ganre-wrapper > a:is(:hover, :focus) { color: var(--citrine); }
+  
+  /**
+   * BUTTONS
+   */
+  
+  .btn-primary:is(:hover, :focus) {
+	background: var(--citrine);
+	color: var(--xiketic);
+  }
+  
+  
+  
+  
+  
+  /*-----------------------------------*\
+   * #HEADER
+  \*-----------------------------------*/
+	
+	.navbar-link:is(:hover, :focus) {
+	  color: var(--citrine);
+	}
+	
+	.navbar-social-link:is(:hover, :focus) {
+	  color: var(--citrine);
+	}
+	
+	
+	
+	
+	
+  
+  
+  /**
+   * MOVIE CARD
+   */
+  
+  .movie-card .card-title:is(:hover, :focus) { color: var(--citrine); }
+  
+  .movie-card :is(.duration, .rating) {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	color: var(--gainsboro);
+	font-size: var(--fs-11);
+	font-weight: var(--fw-500);
+  }
+  
+  .movie-card :is(.duration, .rating) ion-icon {
+	font-size: 13px;
+	--ionicon-stroke-width: 50px;
+	color: var(--citrine);
+  }
+  
+  /**
+   * CUSTOM SLIDER & SCROLLBAR
+   */
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /*-----------------------------------*\
+   * #HERO
+  \*-----------------------------------*/
+  
+  
+  
+  
+  
+  /*-----------------------------------*\
+   * #UPCOMING
+  \*-----------------------------------*/
+  
+  
+  
+  
+  
+  /*-----------------------------------*\
+   * #SERVICE
+  \*-----------------------------------*/
+  
+  
+  
+  
+  
+  /*-----------------------------------*\
+   * #TOP RATED
+  \*-----------------------------------*/
+  
+  
+  
+  
+  
+  /*-----------------------------------*\
+   * #TV SEREIS
+  \*-----------------------------------*/
+  
+  
+  
+  
+  
+  /*-----------------------------------*\
+   * #CTA
+  \*-----------------------------------*/
+  
+  .cta-form-btn:is(:hover, :focus) {
+	background: var(--citrine);
+	color: var(--eerie-black);
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /*-----------------------------------*\
+   * #GO TO TOP
+  \*-----------------------------------*/
+  
+  
+  
+  
+  
+  /*-----------------------------------*\
+   * #MOVIE DETAIL 
+  \*-----------------------------------*/
+  
+  .details-actions .share:is(:hover, :focus) span { color: var(--citrine); }
+  
+  .details-actions .btn-primary:is(:hover, :focus) { background: var(--citrine); }
+  
+  
+  
+  
+  
+  /*-----------------------------------*\
+   * #MEDIA QUERIES
+  \*-----------------------------------*/
+  
+  /**
+   * responsive for large than 550px screen
+   */
+  
+  @media (min-width: 550px) {
+  
+	/**
+	 * CUSTOM PROPERTY
+	 */
+  
+	:root {
+  
+	  /**
+	   * typography
+	   */
+  
+	  --fs-1: 42px;
+  
+	}
+  
+  
+  
+	/**
+	 * REUSED STYLE
+	 */
+  
+	.container {
+	  max-width: 540px;
+	  margin-inline: auto;
+	}
+  
+	/* MOVIE CARD */
+  
+  
+  
+	/**
+	 * HERO
+	 */
+  
+  
+  
+	/**
+	 * UPCOMING
+	 */
+  
+  
+  
+	/**
+	 * SERVICE
+	 */
+  
+  
+  
+	/**
+	 * MOVIE DETAIL
+	 */
+  
+  }
+  
+  
+  
+  
+  
+  /**
+   * responsive for large than 768px screen
+   */
+  
+  @media (min-width: 768px) {
+  
+	/**
+	 * CUSTOM PROPERTY
+	 */
+  
+	:root {
+  
+	  /**
+	   * typography
+	   */
+  
+	  --fs-2: 36px;
+  
+	}
+  
+  
+  
+	/**
+	 * REUSED STYLE
+	 */
+  
+	.container { max-width: 720px; }
+  
+  
+  
+	/**
+	 * HERO
+	 */
+  
+  
+  
+	/**
+	 * SERVICE
+	 */
+  
+  
+  
+	/**
+	 * CTA
+	 */
+  
+  
+  
+  
+  
+  
+  
+	/**
+	 * MOVIE DETAIL
+	 */
+  
+  }
+  
+  
+  
+  
+  
+  /**
+   * responsive for large than 992px screen
+   */
+  
+  @media (min-width: 992px) {
+  
+	/**
+	 * REUSED STYLE
+	 */
+  
+	.container { max-width: 960px; }
+  
+	/* MOVIE CARD */
+  
+  
+  
+  
+  
+	/**
+	 * HEADER
+	 */	  
+  
+  
+	/**
+	 * HERO
+	 */
+  
+  
+  
+	/**
+	 * UPCOMING
+	 */
+  
+	.upcoming :is(.section-subtitle, .section-title) { text-align: left; }
+  
+  
+  
+	/**
+	 * SERVICE
+	 */
+  
+  
+  
+	/**
+	 * CTA
+	 */
+  
+  
+  
+	/**
+	 * MOVIE DETAIL
+	 */
+  
+  }
+  
+  
+  
+  
+  
+  /**
+   * responsive for large than 1200px screen
+   */
+  
+  @media (min-width: 1200px) {
+  
+	/**
+	 * CUSTOM PROPERTY
+	 */
+  
+	:root {
+  
+	  /**
+	   * typography
+	   */
+  
+	  --fs-1: 60px;
+	  --fs-4: 26px;
+  
+	}
+  
+  
+  
+	/**
+	 * REUSED STYLE
+	 */
+  
+	.container { max-width: 1320px; }
+  
+	/* MOVIE CARD */
+  
+  
+  
+	/**
+	 * HERO
+	 */
+  
+  
+  
+	/**
+	 * UPCOMING
+	 */
+  
+  
+  
+	/**
+	 * SERVICE
+	 */
+  
+  
+  
+	/**
+	 * CTA
+	 */
+  
+  
+  
+	/**
+	 * MOVIE DETAIL
+	 */
+  
+  }
+  
+  
+  /* RESPONSIVE */
+  
+  @media only screen and (max-width: 1280px) {
+	html {
+		font-size: 14px;
+	}
+  }
+  
+  @media only screen and (max-width: 850px) {
+	html {
+		font-size: 12px;
+	}
+  
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  :root {
+  
+	
+	--rich-black-fogra-30:   hsl(219, 32%, 10%);
+	--off-white:             hsl(0, 0%, 88%);
+	--white:                 hsl(0, 0%, 100%);
+  
+	--ff-inter: "Inter", sans-serif;
+  
+	--section-heading: 40px;
+	--fs-lg:           22px;
+	--fs-md:           17px;
+	--fs-sm:           14px;
+	--fs-x-sm:         12px;
+	
+	--fw-7: 700;
+	--fw-6: 600;
+	--fw-5: 500;
+  
+	--px: 120px; 
+  
+  }
+  
+  .rating:not(:checked) > label:hover,
+  .rating:not(:checked) > label:hover ~ label { color: #ff4444;  }
+  
+  .rating:not(:checked)>label:hover,
+  .rating:not(:checked)>label:hover~label {
+	  color: #ff4444;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  :root {
+	--weight-bold: 700;
+	--primary-variant: hsla(349, 69%, 51%, 1);
+	--surface: hsla(250, 13%, 11%, 1);
+	--transition-short: 250ms ease;
+	--main-color: #c0392b;
+	--on-surface: hsla(250, 100%, 95%, 1);
+	--on-surface-variant: hsla(250, 1%, 44%, 1);
+	--radius-8: 8px;
+	--banner-background: hsla(250, 6%, 20%, 1);
+	--background: hsla(220, 17%, 7%, 1);
+	--bottom-overlay: 180deg, hsla(250, 13%, 11%, 0), hsla(250, 13%, 11%, 1);
+	--radius-24: 24px;
+	--white: hsla(0, 0%, 100%, 1);
+	--fs-body: 1.8rem;
+	--on-background: hsla(220, 100%, 95%, 1);
+  
+  
+	--ff-poppins: 'Poppins', sans-serif;
+  }
+  
+  /*-----------------------------------*\
+	#RESET
+  \*-----------------------------------*/
+  
+  /*-----------------------------------*\
+	#REUSED STYLE
+  \*-----------------------------------*/
+  
+  .search-btn:is(:hover, :focus-visible) img {
+	opacity: 1;
+  }
+  
+  /*-----------------------------------*\
+	#SEARCH MODAL
+  \*-----------------------------------*/
+  
+  .rating:not(:checked)>label:hover,
+  .rating:not(:checked)>label:hover~label {
+	  color: #ff4444;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+	
+  @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Ubuntu:wght@300;400;500&display=swap");
+  
+  .sign{
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+  }
+  .sign{
+	height: 100%;
+  }
+  .sign{
+	font-family: 'Ubuntu', sans-serif;
+	background-color: #2b2b31;
+	font-weight: normal;
+	-webkit-font-smoothing: antialiased;
+  }
+  .sign button {
+	padding: 0;
+	border: none;
+	background-color: transparent;
+	transition: 0.5s ease;
+	transition-property: color, background-color, border-color, box-shadow, opacity;
+	cursor: pointer;
+  }
+  .sign button:focus {
+	outline: none;
+  }
+  .sign a {
+	text-decoration: none;
+	transition: 0.5s ease;
+	transition-property: color, background-color, border-color, box-shadow, opacity;
+  }
+  .sign a:hover,
+  .sign a:active,
+  .sign a:focus {
+	outline: none;
+	text-decoration: none;
+  }
+  .signbar_input {
+	padding: 0;
+	margin: 0;
+	border-radius: 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	box-shadow: none;
+	transition: 0.5s ease;
+	transition-property: color, border-color, box-shadow;
+  }
+  .signbar_input:focus {
+	outline: none;
+  }
+  .signbar_input::-webkit-outer-spin-button,
+  .signbar_input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+  }
+  .sign::-moz-selection {
+	background: #fff;
+	color: #000;
+	text-shadow: none;
+  }
+  .sign::selection {
+	background: #fff;
+	color: #000;
+	text-shadow: none;
+  }
+  .sign::-webkit-input-placeholder {
+	color: #c7c7c7;
+	opacity: 1;
+  }
+  .sign::-moz-placeholder {
+	color: #c7c7c7;
+	opacity: 1;
+  }
+  .sign:-moz-placeholder {
+	color: #c7c7c7;
+	opacity: 1;
+  }
+  .sign:-ms-input-placeholder {
+	color: #c7c7c7;
+	opacity: 1;
+  }
+  .sign:focus {
+	outline: -webkit-focus-ring-color auto 0px;
+  }
+  .sign:focus-visible {
+	outline: 0px dotted;
+  }
+  @media (min-width: 1400px) {
+	.container {
+	  max-width: 1324px;
+	}
+  }
+  
+  .sign {
+	display: block;
+	position: relative;
+  }
+  .sign__content {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	min-height: 100vh;
+	padding: 40px 0;
+  }
+  .sign__form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: #28282d;
+	box-shadow: 0 5px 25px 0 rgba(0,0,0,0.2);
+	padding: 40px 20px;
+	position: relative;
+	width: 100%;
+	max-width: 440px;
+	border-radius: 8px;
+	overflow: hidden;
+  }
+  .sign__form:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 2px;
+	display: block;
+	background: linear-gradient(90deg, #ff55a5 0%, #ff5860 100%);
+	box-shadow: 0 0 20px 0 rgba(255,88,96,0.5);
+  }
+  .sign__logo {
+	margin-bottom: 40px;
+  }
+  .sign__logo img {
+	max-width: 130px;
+  }
+  .sign__input {
+	background-color: #2b2b31;
+	border: 1px solid transparent;
+	height: 50px;
+	position: relative;
+	color: #fff;
+	font-size: 16px;
+	width: 100%;
+	border-radius: 8px;
+	padding: 0 20px;
+	font-family: 'Open Sans', sans-serif;
+  }
+  .sign__input:hover,
+  .sign__input:focus {
+	border-color: #ff55a5;
+  }
+  .sign__group {
+	position: relative;
+	margin-bottom: 20px;
+	width: 100%;
+  }
+  .sign__group--checkbox input:not(:checked) {
+	position: absolute;
+	left: -9999px;
+  }
+  .sign__group--checkbox input:not(:checked) + label {
+	font-size: 14px;
+	color: #c7c7c7;
+	font-family: 'Open Sans', sans-serif;
+	position: relative;
+	cursor: pointer;
+	padding-left: 34px;
+	line-height: 22px;
+	margin: 0;
+  }
+  .sign__group--checkbox input:not(:checked) + label a {
+	color: #ff55a5;
+  }
+  .sign__group--checkbox input:not(:checked) + label a:hover {
+	color: #ff5860;
+  }
+  .sign__group--checkbox input:not(:checked) + label:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 20px;
+	height: 20px;
+	background-color: #323237;
+	border-radius: 2px;
+  }
+  .sign__group--checkbox input:not(:checked) + label:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 20px;
+	height: 20px;
+	transition: 0.5s;
+	background: url("../images/check.svg") no-repeat center;
+	background-size: 20px auto;
+	border-radius: 2px;
+  }
+  .sign__group--checkbox input:not(:checked) + label:after {
+	opacity: 0;
+	transform: scale(0);
+  }
+  .sign__radio input:not(:checked) {
+	position: absolute;
+	left: -9999px;
+  }
+  .sign__btn {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	width: 100%;
+	border-radius: 8px;
+	background: linear-gradient(90deg, #ff5860 0%, #ff55a5 100%);
+	box-shadow: 0 0 16px 0 rgba(255,88,96,0.3);
+	position: relative;
+  }
+  .sign__btn:before {
+	content: '';
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: linear-gradient(90deg, #ff55a5 0%, #ff5860 100%);
+	border-radius: 8px;
+	opacity: 1;
+	transition: opacity 0.5s ease;
+  }
+  .sign__btn span {
+	font-size: 14px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-family: 'Open Sans', sans-serif;
+	position: relative;
+	z-index: 2;
+  }
+  .sign__btn:hover {
+	box-shadow: 0 0 16px 0 rgba(255,88,96,0.6);
+  }
+  .sign__btn:hover:before {
+	opacity: 0;
+  }
+  .sign__text {
+	display: block;
+	margin-top: 20px;
+	font-size: 14px;
+	line-height: 24px;
+	color: #c7c7c7;
+	font-family: 'Open Sans', sans-serif;
+  }
+  .sign__text a {
+	color: #ff55a5;
+  }
+  .sign__text a:hover {
+	color: #ff5860;
+  }
+  @media (min-width: 768px) {
+	.sign__form {
+	  padding: 40px 80px;
+	}
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .main-footer{
+   margin-top: 5%;
+  }
+  
