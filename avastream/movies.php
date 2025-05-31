@@ -42,6 +42,9 @@ function getMovieDetails($con, $movie_id) {
     <!-- Hover Styles -->
     <link href="css/hover-min.css" rel="stylesheet">
     <!-- Magnific Styles -->
+     
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
     <link href="css/magnific-popup.css" rel="stylesheet">
     <!-- Bootstrap Datepicker Styles -->
     <link href="css/bootstrap-datepicker.min.css" rel="stylesheet">
@@ -118,67 +121,7 @@ function getMovieDetails($con, $movie_id) {
         <!-- End Swiper Slider -->
         <!-- Start Main Content -->
         <div class="main-content" >
-            <!-- Start Recently Added Section -->
-            <section class="recently-added">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <h2 class="block-title">Upcoming Movies</h2>
-                            <!-- Start Pupular Slider -->
-                            <div id="pupular-slider" class="owl-carousel owl-theme">
 
-                            <?php
-          // Fetch and display upcoming movies
-$query = "SELECT movie_id FROM upcoming_movies";
-$result = mysqli_query($con, $query);
-while ($row = mysqli_fetch_assoc($result)) {
-  $movie_id = $row['movie_id'];
-  $movie = getMovieDetails($con, $movie_id);
-  echo '
-                            
-                                <div class="item">
-                                    <div class="video-block">
-                                        <div class="video-thumb position-relative thumb-overlay">
-                                            <a href="#"><img class="img-fluid" src="../Main Assests/images/movies/'.$movie['image'].'" alt=""></a>
-                                            <div class="box-content">
-                                                <ul class="icon">
-                                                <li>
-                                                <a href="movie_booking.php?id='.$movie_id.'"><i class="fa-solid fa-ticket"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="movie-single.php?movie_id='.$movie_id.'"><i class="fas fa-info"></i></a>
-                                            </li>
-                                                </ul>
-                                            </div>
-                                            <!-- Box Content End -->
-                                        </div>
-                                        <!-- Video Thumb End -->
-                                        <div class="video-content">
-                                            <h2 class="video-title"><a href="movie-single.php?movie_id='.$movie_id.'">'.$movie['name'].'</a></h2>
-                                            <div class="video-info d-flex align-items-center">
-                                            <span class="video-year red-c" style="color:red;">'.$movie['release_date'].'</span> <span class="video-age"><i class="fa-solid fa-star red-c"></i> '.$movie['imdb'].'</span> <span class="video-type"><i class="fa-regular fa-clock red-c"></i> '.$movie['runtime'].' min</span>
-                                            </div>
-                                        </div>
-                                        <!-- video Content End -->
-                                    </div>
-                                    <!-- video Block End -->
-                                </div>
-                            '; }
-                            ?>
-
-
-
-                                <!-- Owl Slider End -->
-                            </div>
-                            <!-- Pupular Slider End -->
-                        </div>
-                        <!-- Col End -->
-                    </div>
-                    <!-- Row End -->
-                </div>
-                <!-- Container End -->
-            </section>
-            <!-- Recently Added Section End -->
             <!-- Start Hollywood Movies Section -->
             <section class="hollywood-movies">
                 <div class="container-fluid">
@@ -302,6 +245,71 @@ while ($row = mysqli_fetch_assoc($result)) {
                 <!-- Container End -->
             </section>
             <!-- Award-Winning Movies Section End -->
+
+
+
+            <!-- Start Recently Added Section -->
+            <section class="recently-added">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h2 class="block-title">Upcoming Movies</h2>
+                            <!-- Start Pupular Slider -->
+                            <div id="pupular-slider" class="owl-carousel owl-theme">
+
+                            <?php
+          // Fetch and display upcoming movies
+$query = "SELECT movie_id FROM upcoming_movies";
+$result = mysqli_query($con, $query);
+while ($row = mysqli_fetch_assoc($result)) {
+  $movie_id = $row['movie_id'];
+  $movie = getMovieDetails($con, $movie_id);
+  echo '
+                            
+                                <div class="item">
+                                    <div class="video-block">
+                                        <div class="video-thumb position-relative thumb-overlay">
+                                            <a href="#"><img class="img-fluid" src="../Main Assests/images/movies/'.$movie['image'].'" alt=""></a>
+                                            <div class="box-content">
+                                                <ul class="icon">
+                                                <li>
+                                                <a href="movie_booking.php?id='.$movie_id.'"><i class="fa-solid fa-ticket"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="movie-single.php?movie_id='.$movie_id.'"><i class="fas fa-info"></i></a>
+                                            </li>
+                                                </ul>
+                                            </div>
+                                            <!-- Box Content End -->
+                                        </div>
+                                        <!-- Video Thumb End -->
+                                        <div class="video-content">
+                                            <h2 class="video-title"><a href="movie-single.php?movie_id='.$movie_id.'">'.$movie['name'].'</a></h2>
+                                            <div class="video-info d-flex align-items-center">
+                                            <span class="video-year red-c" style="color:red;">'.$movie['release_date'].'</span> <span class="video-age"><i class="fa-solid fa-star red-c"></i> '.$movie['imdb'].'</span> <span class="video-type"><i class="fa-regular fa-clock red-c"></i> '.$movie['runtime'].' min</span>
+                                            </div>
+                                        </div>
+                                        <!-- video Content End -->
+                                    </div>
+                                    <!-- video Block End -->
+                                </div>
+                            '; }
+                            ?>
+
+
+
+                                <!-- Owl Slider End -->
+                            </div>
+                            <!-- Pupular Slider End -->
+                        </div>
+                        <!-- Col End -->
+                    </div>
+                    <!-- Row End -->
+                </div>
+                <!-- Container End -->
+            </section>
+            <!-- Recently Added Section End -->
+
         </div>
         <!-- Main Content End -->
       
@@ -316,13 +324,13 @@ include("footer.php");
     <!-- Javascript Files
     ================================================== -->
     <!-- Initialize jQuery Library -->
-    <script src="js/jquery.js"></script>
+    <!-- <script src="js/jquery.js"></script> -->
     <!-- Popper jQuery -->
     <script src="js/popper.min.js"></script>
     <!-- Bootstrap jQuery -->
     <script src="js/bootstrap.min.js"></script>
     <!-- jQuery Owl Carousel -->
-    <script src="js/owl.carousel.min.js"></script>
+    <!-- <script src="js/owl.carousel.min.js"></script> -->
     <!-- jQuery Slick Slider -->
     <script src="js/slick.min.js"></script>
     <!-- jQuery Slick Animation -->
@@ -338,6 +346,25 @@ include("footer.php");
     <script src="js/sidebar.js"></script>
     <!-- Template Custom -->
     <script src="js/main.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#pupular-slider").owlCarousel({
+    items: 5,
+    margin: 10,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    loop: true,
+    responsive:{
+      0:{ items:1 },
+      600:{ items:3 },
+      1000:{ items:5 }
+    }
+  });
+});
+</script>
 
 </body>
 
