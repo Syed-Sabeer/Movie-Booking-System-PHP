@@ -1,0 +1,5 @@
+RewriteEngine On
+
+# Redirect only if user visits root (no extra path)
+RewriteCond %{REQUEST_URI} ^/Movie-Booking-System-PHP/?$ [NC]
+RewriteRule ^$ /Movie-Booking-System-PHP/avastream/index.php [L,R=302]
